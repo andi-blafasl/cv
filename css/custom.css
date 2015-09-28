@@ -3,18 +3,6 @@ body {
     background: #eee;
 }
 
-.main-wrap {
-    overflow: hidden;
-    max-width: 900px;
-    width: 100%;
-    margin: 0 auto;
-    background: white;
-    position: relative;
-    box-shadow: 0 4px 5px 0 rgba(0,0,0,.14),0 1px 10px 0 rgba(0,0,0,.12),0 2px 4px -1px rgba(0,0,0,.2);
-    border-radius: 2px;
-    border: 0;
-}
-
 .headline h1 {
     font-family: 'Ubuntu', sans-serif;
     font-weight: 700;
