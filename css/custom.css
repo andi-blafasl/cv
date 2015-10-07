@@ -85,3 +85,24 @@ body, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4 {
     margin-right: 15px;
 }
 
+.timeline .tl-date {
+    font-size: 15px;
+}
+.timeline .tl-title {
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 10px;
+}
+.timeline .tl-subtitle {
+    font-size: 12px;
+    font-weight: 400;
+}
+@media (min-width: 768px) {
+    .timeline dd {
+        border-left: solid 2px silver;
+        padding-left: 15px;
+    }
+}
+.timeline dd {
+    padding-left: 25px;
+}
