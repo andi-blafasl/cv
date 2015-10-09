@@ -16,9 +16,9 @@
     <!-- CSS for customization -->
     <link href="css/custom.css" rel="stylesheet">
 </head>
-<body>
+<body data-spy="scroll" data-target="#main-nav-top">
     <!-- navigtion bar -->
-    <nav class="navbar navbar-info navbar-fixed-top shadow-z-1">
+    <nav id="main-nav-top" class="navbar navbar-info navbar-fixed-top shadow-z-1">
       <!-- <div class="container">-->
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -30,12 +30,12 @@
         </div>
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav pull-right">
-            <li class="active"><a href="#top">Über mich</a></li>
-            <li><a href="#Kentnisse">Kentnisse</a></li>
-            <li><a href="#Berufserfahrung">Berufserfahrung</a></li>
-            <li><a href="#Weiterbildung">Weiterbildung</a></li>
-            <li><a href="#Ausbildung">Ausbildung</a></li>
-            <li><a href="#Interessen">Interessen</a></li>
+            <li><a href="#top" data-toggle="collapse" data-target=".navbar-collapse.in">Über mich</a></li>
+            <li><a href="#Kentnisse" data-toggle="collapse" data-target=".navbar-collapse.in">Kentnisse</a></li>
+            <li><a href="#Berufserfahrung" data-toggle="collapse" data-target=".navbar-collapse.in">Berufserfahrung</a></li>
+            <li><a href="#Weiterbildung" data-toggle="collapse" data-target=".navbar-collapse.in">Weiterbildung</a></li>
+            <li><a href="#Ausbildung" data-toggle="collapse" data-target=".navbar-collapse.in">Ausbildung</a></li>
+            <li><a href="#Interessen" data-toggle="collapse" data-target=".navbar-collapse.in">Interessen</a></li>
           </ul>
         </div><!--/.nav-collapse -->
         <!-- </div> -->
@@ -172,9 +172,55 @@
                     </div>
 
                     <div class="paper-content">
-                        <p>Bavaria ipsum dolor sit amet gelbe Rüam aasgem Sauakraud Biawambn et. Sog i Heimatland labore, voluptua Landla i mechad dee Schwoanshaxn. Gschmeidig molestie eirmod, Watschnbaam exercitation a Maß und no a Maß wos scheans dahoam kumm geh auf gehds beim Schichtl: Radler ned woar um Godds wujn quis lorem? Kasd sea in auf der Oim, da gibt’s koa Sünd, muass no a Maß hoam. Sauwedda erat pfenningguat Resi Schbozal.</p>
-                        <p>Mogsd a Bussal so schee ozapfa Charivari Obazda, wann griagd ma nacha wos z’dringa Guglhupf sog i is! Dahoam nia need sog i augue o’ha Meidromml is ma Wuascht aba midanand guad Schneid. Feugiat takimata noch da Giasinga Heiwog koa, in Sauakraud vui dolor Fünferl guad i sog ja nix, i red ja bloß. Wolpern a ganze Hoiwe an großherzig Servas duo, Graudwiggal jo mei tempor!</p>
-                        <p>Pfenningguat Charivari et dringma aweng, aba Zidern? Sei liberalitas Bavariae helfgod sed Gams no: Und Kaiwe autem Weißwiaschd stet Radi enim Gaudi nisl ham an. Noch da Giasinga Heiwog i waar soweid auf’d Schellnsau Haferl wolln! Wuid i hab an lorem Enzian, des is hoid aso minim Kneedl. A Maß und no a Maß Meidromml Ledahosn et zünftig.</p>
+                        
+                        <dl class="dl-horizontal timeline">
+                            <dt><div class="btn btn-info btn-raised btn-xs tl-date">2014</div></dt>
+                            <dd>
+                                <div class="tl-title">Windows Server 2012 R2</div>
+                                <div class="tl-subtitle">Comparex</div>
+                            </dd>
+                        </dl>
+
+                        <dl class="dl-horizontal timeline">
+                            <dt><div class="btn btn-info btn-raised btn-xs tl-date">2013</div></dt>
+                            <dd>
+                                <div class="tl-title">Winderschule 2013: Intensiv Update auf den neuesten Stand der Netzwerk-Technik</div>
+                                <div class="tl-subtitle">ComConsult Akademie</div>
+                            </dd>
+                        </dl>
+
+                        <dl class="dl-horizontal timeline">
+                            <dt><div class="btn btn-info btn-raised btn-xs tl-date">2013</div></dt>
+                            <dd>
+                                <div class="tl-title">IPv6 Certification</div>
+                                <div class="tl-subtitle">Hurricane Electric</div>
+                            </dd>
+                        </dl>
+
+                        <dl class="dl-horizontal timeline">
+                            <dt><div class="btn btn-info btn-raised btn-xs tl-date">2012</div></dt>
+                            <dd>
+                                <div class="tl-title">VMware vSphere 5: Install, Configure, Manage</div>
+                                <div class="tl-subtitle">AddOn München</div>
+                            </dd>
+                        </dl>
+
+                        <dl class="dl-horizontal timeline">
+                            <dt><div class="btn btn-info btn-raised btn-xs tl-date">2008</div></dt>
+                            <dd>
+                                <div class="tl-title">Internetworking: optimales Netzwerkdesign mit Switching und Routing</div>
+                                <div class="tl-subtitle">ComConsult Akademie</div>
+                            </dd>
+                        </dl>
+
+                        <dl class="dl-horizontal timeline">
+                            <dt><div class="btn btn-info btn-raised btn-xs tl-date">2000</div></dt>
+                            <dd>
+                                <div class="tl-title">Heterogene Netze mit TCP/IP</div>
+                                <div class="tl-subtitle">IIR Deutschland GmbH</div>
+                            </dd>
+                        </dl>
+
                     </div>
                 </div><!-- end paper -->
 
@@ -186,9 +232,31 @@
                     </div>
 
                     <div class="paper-content">
-                        <p>Bavaria ipsum dolor sit amet gelbe Rüam aasgem Sauakraud Biawambn et. Sog i Heimatland labore, voluptua Landla i mechad dee Schwoanshaxn. Gschmeidig molestie eirmod, Watschnbaam exercitation a Maß und no a Maß wos scheans dahoam kumm geh auf gehds beim Schichtl: Radler ned woar um Godds wujn quis lorem? Kasd sea in auf der Oim, da gibt’s koa Sünd, muass no a Maß hoam. Sauwedda erat pfenningguat Resi Schbozal.</p>
-                        <p>Mogsd a Bussal so schee ozapfa Charivari Obazda, wann griagd ma nacha wos z’dringa Guglhupf sog i is! Dahoam nia need sog i augue o’ha Meidromml is ma Wuascht aba midanand guad Schneid. Feugiat takimata noch da Giasinga Heiwog koa, in Sauakraud vui dolor Fünferl guad i sog ja nix, i red ja bloß. Wolpern a ganze Hoiwe an großherzig Servas duo, Graudwiggal jo mei tempor!</p>
-                        <p>Pfenningguat Charivari et dringma aweng, aba Zidern? Sei liberalitas Bavariae helfgod sed Gams no: Und Kaiwe autem Weißwiaschd stet Radi enim Gaudi nisl ham an. Noch da Giasinga Heiwog i waar soweid auf’d Schellnsau Haferl wolln! Wuid i hab an lorem Enzian, des is hoid aso minim Kneedl. A Maß und no a Maß Meidromml Ledahosn et zünftig.</p>
+                    
+                        <dl class="dl-horizontal timeline">
+                            <dt><div class="btn btn-info btn-raised btn-xs tl-date">10.2005 - 07.2008</div></dt>
+                            <dd>
+                            <div class="tl-title">Cert. IT System Manager <span>(inkl. AdA-Schein)</span></div>
+                                <div class="tl-subtitle">IHK Schwaben</div>
+                            </dd>
+                        </dl>
+                    
+                        <dl class="dl-horizontal timeline">
+                            <dt><div class="btn btn-info btn-raised btn-xs tl-date">09.1998 - 06.2001</div></dt>
+                            <dd>
+                                <div class="tl-title">IT-Systemelektroniker</div>
+                                <div class="tl-subtitle">Chr. Mayr GmbH + Co.KG</div>
+                            </dd>
+                        </dl>
+                    
+                        <dl class="dl-horizontal timeline">
+                            <dt><div class="btn btn-info btn-raised btn-xs tl-date">07.1998</div></dt>
+                            <dd>
+                                <div class="tl-title">Realschulabschluss</div>
+                                <div class="tl-subtitle">staatl. Realschule Kaufbeuren</div>
+                            </dd>
+                        </dl>
+                    
                     </div>
                 </div><!-- end paper -->
 
@@ -200,9 +268,28 @@
                     </div>
 
                     <div class="paper-content">
-                        <p>Bavaria ipsum dolor sit amet gelbe Rüam aasgem Sauakraud Biawambn et. Sog i Heimatland labore, voluptua Landla i mechad dee Schwoanshaxn. Gschmeidig molestie eirmod, Watschnbaam exercitation a Maß und no a Maß wos scheans dahoam kumm geh auf gehds beim Schichtl: Radler ned woar um Godds wujn quis lorem? Kasd sea in auf der Oim, da gibt’s koa Sünd, muass no a Maß hoam. Sauwedda erat pfenningguat Resi Schbozal.</p>
-                        <p>Mogsd a Bussal so schee ozapfa Charivari Obazda, wann griagd ma nacha wos z’dringa Guglhupf sog i is! Dahoam nia need sog i augue o’ha Meidromml is ma Wuascht aba midanand guad Schneid. Feugiat takimata noch da Giasinga Heiwog koa, in Sauakraud vui dolor Fünferl guad i sog ja nix, i red ja bloß. Wolpern a ganze Hoiwe an großherzig Servas duo, Graudwiggal jo mei tempor!</p>
-                        <p>Pfenningguat Charivari et dringma aweng, aba Zidern? Sei liberalitas Bavariae helfgod sed Gams no: Und Kaiwe autem Weißwiaschd stet Radi enim Gaudi nisl ham an. Noch da Giasinga Heiwog i waar soweid auf’d Schellnsau Haferl wolln! Wuid i hab an lorem Enzian, des is hoid aso minim Kneedl. A Maß und no a Maß Meidromml Ledahosn et zünftig.</p>
+                    
+                        <dl class="dl-horizontal timeline">
+                            <dt><div class="btn btn-info btn-raised btn-xs tl-date">Linux</div></dt>
+                            <dd>
+                                <div class="tl-title"><span>Webserver, Virtualisierung, Fileserver, Desktopbetrieb</span></div>
+                            </dd>
+                        </dl>
+                    
+                        <dl class="dl-horizontal timeline">
+                            <dt><div class="btn btn-info btn-raised btn-xs tl-date">Sport</div></dt>
+                            <dd>
+                                <div class="tl-title"><span>Ski, Mountainbike, Wandern, Inline-Skateing</span></div>
+                            </dd>
+                        </dl>
+                     
+                        <dl class="dl-horizontal timeline">
+                            <dt><div class="btn btn-info btn-raised btn-xs tl-date">Modellbau</div></dt>
+                            <dd>
+                                <div class="tl-title"><span>Quadrocopter</span></div>
+                            </dd>
+                        </dl>
+
                     </div>
                 </div><!-- end paper -->
 
@@ -212,7 +299,7 @@
 
     <!-- Your site ends -->
 
-    <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
     <script src="js/ripples.min.js"></script>

@@ -1,6 +1,7 @@
 body {
     padding-top: 70px;
     background: #eee;
+    position: relative;
 }
 
 body, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4 {
@@ -71,11 +72,6 @@ body, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4 {
     padding: 15px 18px;
 }
 
-.paper .paper-footer .row {
-    display: flex;
-    align-items: center;
-}
-
 .paper .paper-footer i {
     font-size: 22px;
 }
@@ -92,6 +88,9 @@ body, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4 {
     font-size: 18px;
     font-weight: 700;
     margin-top: 10px;
+}
+.timeline .tl-title span {
+    font-weight: 400;
 }
 .timeline .tl-subtitle {
     font-size: 12px;
