@@ -43,26 +43,69 @@ body, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4 {
     pointer-events: none;
 }
 
+.paper .paper-image img.paper-image-headline {
+    position: absolute;
+    bottom: 60px;
+    color: #fff;
+    border-radius: 5px;
+    width: auto !important;
+    max-height: 50px;
+    background: none;
+    padding: 0px;
+}
+
+@media (min-width: 768px) {
+    .paper .paper-image img.paper-image-headline {
+        bottom: 80px;
+        width: auto !important;
+        max-height: 110px;
+    }
+}
+
 .paper .paper-image .paper-image-headline {
     position: absolute;
     bottom: 16px;
     left: 18px;
     color: #fff;
-    font-size: 28px;
+    font-size: 20px;
+    border-radius: 4px;
+    background: rgba(0,0,0,0.7);
+    padding: 5px 8px 5px;
+}
+
+@media (min-width: 768px) {
+    .paper .paper-image .paper-image-headline {
+        font-size: 40px;
+    }
 }
 
 .paper .paper-image .paper-image-headline i {
-    font-size: 32px;
+    font-size: 20px;
+}
+
+@media (min-width: 768px) {
+    .paper .paper-image .paper-image-headline i {
+        font-size: 34px;
+    }
 }
 
 .paper .paper-image .paper-image-subline {
     position: absolute;
     bottom: 0px;
-    left: 58px;
+    left: 20px;
     color: #fff;
-    font-size: 12px;
+    font-size: 10px;
+    border-radius: 4px;
+    background: rgba(0,0,0,0.7);
+    padding: 5px 8px 5px;
 }
 
+@media (min-width: 768px) {
+    .paper .paper-image .paper-image-subline {
+        left: 58px;
+        font-size: 14px;
+    }
+}
 .paper .paper-content {
     padding: 18px;
 }
@@ -96,12 +139,14 @@ body, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4 {
     font-size: 12px;
     font-weight: 400;
 }
+.timeline dd {
+    padding-left: 25px;
+}
+
 @media (min-width: 768px) {
     .timeline dd {
         border-left: solid 2px silver;
         padding-left: 15px;
     }
 }
-.timeline dd {
-    padding-left: 25px;
-}
+
