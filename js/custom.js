@@ -1,3 +1,11 @@
+// collapse mobile navbar on click
+// https://github.com/twbs/bootstrap/issues/12852
+$(document).on('click','.navbar-collapse.in',function(e) {
+    if( $(e.target).is('a') && ( $(e.target).attr('class') != 'dropdown-toggle' ) ) {
+        $(this).collapse('hide');
+    }
+});
+
 // Add smooth scrolling to all links inside a navbar
 $("#main-nav-top a").on('click', function(event){
 
@@ -10,7 +18,7 @@ $("#main-nav-top a").on('click', function(event){
   // Using jQuery's animate() method to add smooth page scroll
   // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area (the speed of the animation)
   $('html, body').animate({
-    scrollTop: $(hash).offset().top
+    scrollTop: $(hash).offset().top - 70
   }, 800, function(){
 
     // Add hash (#) to URL when done scrolling (default click behavior)
