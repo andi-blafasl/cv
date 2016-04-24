@@ -1,9 +1,3 @@
-$(document).ready(function () {
-    $(".navbar-nav li a").click(function(event) {
-        $(".navbar-collapse").collapse('hide');
-    });
-});
-
 // Add smooth scrolling to all links inside a navbar
 $("#main-nav-top a").on('click', function(event){
 
