@@ -7,16 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Andreas Hösl - System-/Netzwerkadministrator</title>
 
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-
-    <!-- Material Design fonts -->
-    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Roboto:300,400,500,700">
-    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/icon?family=Material+Icons">
-    
-    <!-- Bootstrap Material Design -->
-    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.5.10/css/bootstrap-material-design.min.css">
-    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.5.10/css/ripples.min.css">
+    <!-- Bootstrap with Material Design and Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.0.0-beta.4/dist/css/bootstrap-material-design.min.css" integrity="sha384-R80DC0KVBO4GSTw+wZ5x2zn2pu4POSErBkf8/fSFhPXHxvHJydT0CSgAP2Yo2r4I" crossorigin="anonymous">
 
     <!-- custom font -->
     <link href="//fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
@@ -25,30 +18,23 @@
     <link href="css/custom.css" rel="stylesheet">
 
 </head>
-<body data-spy="scroll" data-target="#main-nav-top" data-offset="70">
+<body data-spy="scroll" data-target="#main-nav-top" data-offset="71">
     <!-- navigtion bar -->
-    <nav class="navbar navbar-info navbar-fixed-top shadow-z-2">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-nav-top">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">Andreas Hösl</a>
-        </div>
-        <div id="main-nav-top" class="navbar-collapse collapse">
-          <ul class="nav navbar-nav navbar-right">
-            <li class="active"><a href="#Ich">Ich</a></li>
-            <li><a href="#Kentnisse">Kentnisse</a></li>
-            <li><a href="#Berufserfahrung">Berufserfahrung</a></li>
-            <li><a href="#Weiterbildung">Weiterbildung</a></li>
-            <li><a href="#Ausbildung">Ausbildung</a></li>
-            <li><a href="#Interessen">Interessen</a></li>
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-primary shadow-z-2">
+        <a class="navbar-brand" href="#">Andreas Hösl</a>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#main-nav-top" aria-controls="main-nav-top" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="main-nav-top" class="collapse navbar-collapse">
+          <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+            <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show"><a class="nav-link active" href="#Ich">Ich</a></li>
+            <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show"><a class="nav-link" href="#Kentnisse">Kentnisse</a></li>
+            <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show"><a class="nav-link" href="#Berufserfahrung">Berufserfahrung</a></li>
+            <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show"><a class="nav-link" href="#Weiterbildung">Weiterbildung</a></li>
+            <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show"><a class="nav-link" href="#Ausbildung">Ausbildung</a></li>
+            <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show"><a class="nav-link" href="#Interessen">Interessen</a></li>
           </ul>
         </div><!--/.nav-collapse -->
-      </div>
     </nav>
     <!-- end navigation bar -->
 
@@ -96,24 +82,24 @@
 
                     <div class="paper-content">
                     
-                        <h4>Netzwerktechnik <small>TCP/IP, FiberChannel, Planung, Design, Betrieb</small></h4>
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-info" style="width: 70%"></div>
+                        <h5>Netzwerktechnik <small>TCP/IP, FiberChannel, Planung, Design, Betrieb</small></h5>
+                        <div class="progress mb-3">
+                            <div class="progress-bar bg-info" style="width: 70%"></div>
                         </div>
 
-                        <h4>Virtualisierung <small>VMware vSphere, Linux KVM</small></h4>
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-success" style="width: 60%"></div>
+                        <h5>Virtualisierung <small>VMware vSphere, Linux KVM</small></h5>
+                        <div class="progress mb-3">
+                            <div class="progress-bar bg-success" style="width: 60%"></div>
                         </div>
 
-                        <h4>Linux <small>Server, HA-Cluster, Embedded</small></h4>
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-warning" style="width: 80%"></div>
+                        <h5>Linux <small>Server, HA-Cluster, Embedded</small></h5>
+                        <div class="progress mb-3">
+                            <div class="progress-bar bg-warning" style="width: 80%"></div>
                         </div>
 
-                        <h4>Programmierung <small>HTML, CSS, JS, PHP, Bash, Git</small></h4>
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-danger" style="width: 50%"></div>
+                        <h5>Programmierung <small>HTML, CSS, JS, PHP, Bash, Git</small></h5>
+                        <div class="progress mb-3">
+                            <div class="progress-bar bg-danger" style="width: 50%"></div>
                         </div>
 
                     </div>
@@ -128,9 +114,9 @@
 
                     <div class="paper-content">
 
-                        <dl class="dl-horizontal timeline">
-                            <dt><a target="_blank" href="#" class="btn btn-info btn-raised btn-xs tl-date">06.2001 - heute</a></dt>
-                            <dd>
+                        <dl class="row timeline">
+                            <dt class="col-sm-3 d-flex align-items-baseline justify-content-center"><a target="_blank" href="#" class="btn btn-info btn-raised btn-xs tl-date">06.2001 - heute</a></dt>
+                            <dd class="col-sm-9">
                                 <div class="tl-title">System-/Netzwerkadministrator</div>
                                 <div class="tl-subtitle">Chr. Mayr GmbH + Co. KG</div>
                                 <ul class="tl-ul">
@@ -156,9 +142,9 @@
                             </dd>
                         </dl>
                         
-                        <dl class="dl-horizontal timeline">
-                            <dt><a target="_blank" href="#" class="btn btn-info btn-raised btn-xs tl-date">09.2001 - 07.2002</a></dt>
-                            <dd>
+                        <dl class="row timeline">
+                            <dt class="col-sm-3 d-flex align-items-baseline justify-content-center"><a target="_blank" href="#" class="btn btn-info btn-raised btn-xs tl-date">09.2001 - 07.2002</a></dt>
+                            <dd class="col-sm-9">
                                 <div class="tl-title">Zivildienst</div>
                                 <div class="tl-subtitle">Stadtverwaltung Kaufbeuren</div>
                                 <ul class="tl-ul">
@@ -184,57 +170,57 @@
 
                     <div class="paper-content">
                         
-                        <dl class="dl-horizontal timeline">
-                            <dt><a target="_blank" href="#" class="btn btn-info btn-raised btn-xs tl-date">2016</a></dt>
-                            <dd>
+                        <dl class="row timeline">
+                            <dt class="col-sm-3 d-flex align-items-baseline justify-content-center"><a target="_blank" href="#" class="btn btn-info btn-raised btn-xs tl-date">2016</a></dt>
+                            <dd class="col-sm9">
                                 <div class="tl-title">IT-Security Workshop genulab</div>
                                 <div class="tl-subtitle">genua</div>
                             </dd>
                         </dl>
 
-                        <dl class="dl-horizontal timeline">
-                            <dt><a target="_blank" href="#" class="btn btn-info btn-raised btn-xs tl-date">2014</a></dt>
-                            <dd>
+                        <dl class="row timeline">
+                            <dt class="col-sm-3 d-flex align-items-baseline justify-content-center"><a target="_blank" href="#" class="btn btn-info btn-raised btn-xs tl-date">2014</a></dt>
+                            <dd class="col-sm-9">
                                 <div class="tl-title">Windows Server 2012 R2</div>
                                 <div class="tl-subtitle">Comparex</div>
                             </dd>
                         </dl>
 
-                        <dl class="dl-horizontal timeline">
-                            <dt><a target="_blank" href="#" class="btn btn-info btn-raised btn-xs tl-date">2013</a></dt>
-                            <dd>
+                        <dl class="row timeline">
+                            <dt class="col-sm-3 d-flex align-items-baseline justify-content-center"><a target="_blank" href="#" class="btn btn-info btn-raised btn-xs tl-date">2013</a></dt>
+                            <dd class="col-sm-9">
                                 <div class="tl-title">Winderschule 2013: Intensiv Update auf den neuesten Stand der Netzwerk-Technik</div>
                                 <div class="tl-subtitle">ComConsult Akademie</div>
                             </dd>
                         </dl>
 
-                        <dl class="dl-horizontal timeline">
-                            <dt><a target="_blank" href="#" class="btn btn-info btn-raised btn-xs tl-date">2013</a></dt>
-                            <dd>
+                        <dl class="row timeline">
+                            <dt class="col-sm-3 d-flex align-items-baseline justify-content-center"><a target="_blank" href="#" class="btn btn-info btn-raised btn-xs tl-date">2013</a></dt>
+                            <dd class="col-sm-9">
                                 <div class="tl-title">IPv6 Certification</div>
                                 <div class="tl-subtitle">Hurricane Electric</div>
                             </dd>
                         </dl>
 
-                        <dl class="dl-horizontal timeline">
-                            <dt><a target="_blank" href="#" class="btn btn-info btn-raised btn-xs tl-date">2012</a></dt>
-                            <dd>
+                        <dl class="row timeline">
+                            <dt class="col-sm-3 d-flex align-items-baseline justify-content-center"><a target="_blank" href="#" class="btn btn-info btn-raised btn-xs tl-date">2012</a></dt>
+                            <dd class="col-sm-9">
                                 <div class="tl-title">VMware vSphere 5: Install, Configure, Manage</div>
                                 <div class="tl-subtitle">AddOn München</div>
                             </dd>
                         </dl>
 
-                        <dl class="dl-horizontal timeline">
-                            <dt><a target="_blank" href="#" class="btn btn-info btn-raised btn-xs tl-date">2008</a></dt>
-                            <dd>
+                        <dl class="row timeline">
+                            <dt class="col-sm-3 d-flex align-items-baseline justify-content-center"><a target="_blank" href="#" class="btn btn-info btn-raised btn-xs tl-date">2008</a></dt>
+                            <dd class="col-sm-9">
                                 <div class="tl-title">Internetworking: optimales Netzwerkdesign mit Switching und Routing</div>
                                 <div class="tl-subtitle">ComConsult Akademie</div>
                             </dd>
                         </dl>
 
-                        <dl class="dl-horizontal timeline">
-                            <dt><a target="_blank" href="#" class="btn btn-info btn-raised btn-xs tl-date">2000</a></dt>
-                            <dd>
+                        <dl class="row timeline">
+                            <dt class="col-sm-3 d-flex align-items-baseline justify-content-center"><a target="_blank" href="#" class="btn btn-info btn-raised btn-xs tl-date">2000</a></dt>
+                            <dd class="col-sm-9">
                                 <div class="tl-title">Heterogene Netze mit TCP/IP</div>
                                 <div class="tl-subtitle">IIR Deutschland GmbH</div>
                             </dd>
@@ -252,25 +238,25 @@
 
                     <div class="paper-content">
                     
-                        <dl class="dl-horizontal timeline">
-                            <dt><a target="_blank" href="#" class="btn btn-info btn-raised btn-xs tl-date">10.2005 - 07.2008</a></dt>
-                            <dd>
+                        <dl class="row timeline">
+                            <dt class="col-sm-3 d-flex align-items-baseline justify-content-center"><a target="_blank" href="#" class="btn btn-info btn-raised btn-xs tl-date">10.2005 - 07.2008</a></dt>
+                            <dd class="col-sm-9">
                             <div class="tl-title">Cert. IT System Manager <span>(inkl. <a target="_blank" href="https://de.wikipedia.org/wiki/Ausbilder">AdA-Schein</a>)</span></div>
                                 <div class="tl-subtitle">IHK Schwaben</div>
                             </dd>
                         </dl>
                     
-                        <dl class="dl-horizontal timeline">
-                            <dt><a target="_blank" href="#" class="btn btn-info btn-raised btn-xs tl-date">09.1998 - 06.2001</a></dt>
-                            <dd>
+                        <dl class="row timeline">
+                            <dt class="col-sm-3 d-flex align-items-baseline justify-content-center"><a target="_blank" href="#" class="btn btn-info btn-raised btn-xs tl-date">09.1998 - 06.2001</a></dt>
+                            <dd class="col-sm-9">
                                 <div class="tl-title">IT-Systemelektroniker</div>
                                 <div class="tl-subtitle">Chr. Mayr GmbH + Co.KG</div>
                             </dd>
                         </dl>
                     
-                        <dl class="dl-horizontal timeline">
-                            <dt><a target="_blank" href="#" class="btn btn-info btn-raised btn-xs tl-date">07.1998</a></dt>
-                            <dd>
+                        <dl class="row timeline">
+                            <dt class="col-sm-3 d-flex align-items-baseline justify-content-center"><a target="_blank" href="#" class="btn btn-info btn-raised btn-xs tl-date">07.1998</a></dt>
+                            <dd class="col-sm-9">
                                 <div class="tl-title">Realschulabschluss</div>
                                 <div class="tl-subtitle">staatl. Realschule Kaufbeuren</div>
                             </dd>
@@ -288,23 +274,23 @@
 
                     <div class="paper-content">
                     
-                        <dl class="dl-horizontal timeline">
-                            <dt><a target="_blank" href="#" class="btn btn-info btn-raised btn-xs tl-date">Linux</a></dt>
-                            <dd>
+                        <dl class="row timeline">
+                            <dt class="col-sm-3 d-flex align-items-baseline justify-content-center"><a target="_blank" href="#" class="btn btn-info btn-raised btn-xs tl-date">Linux</a></dt>
+                            <dd class="col-sm-9">
                                 <div class="tl-title"><span>Webserver, Virtualisierung, Fileserver, Desktopbetrieb</span></div>
                             </dd>
                         </dl>
                     
-                        <dl class="dl-horizontal timeline">
-                            <dt><a target="_blank" href="#" class="btn btn-info btn-raised btn-xs tl-date">Sport</a></dt>
-                            <dd>
+                        <dl class="row timeline">
+                            <dt class="col-sm-3 d-flex align-items-baseline justify-content-center"><a target="_blank" href="#" class="btn btn-info btn-raised btn-xs tl-date">Sport</a></dt>
+                            <dd class="col-sm-9">
                                 <div class="tl-title"><span>Ski, Mountainbike, Wandern, Inline-Skateing</span></div>
                             </dd>
                         </dl>
                      
-                        <dl class="dl-horizontal timeline">
-                            <dt><a target="_blank" href="#" class="btn btn-info btn-raised btn-xs tl-date">Hobby</a></dt>
-                            <dd>
+                        <dl class="row timeline">
+                            <dt class="col-sm-3 d-flex align-items-baseline justify-content-center"><a target="_blank" href="#" class="btn btn-info btn-raised btn-xs tl-date">Hobby</a></dt>
+                            <dd class="col-sm-9">
                                 <div class="tl-title"><span>Modellbau, Quadrocopter, Fotographie</span></div>
                             </dd>
                         </dl>
@@ -319,18 +305,12 @@
     <!-- Your site ends -->
 
     <!-- jquery >-->
-    <script src="//code.jquery.com/jquery-1.12.3.min.js" integrity="sha384-ugqypGWrzPLdx2zEQTF17cVktjb01piRKaDNnbYGRSxyEoeAm+MKZVtbDUYjxfZ6" crossorigin="anonymous"></script>
-
-    <!-- bootstrap -->
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 
     <!-- Material Design for Bootstrap -->
-    <script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.5.10/js/material.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.5.10/js/ripples.min.js"></script>
-    <script>
-      $.material.init();
-    </script>
+    <script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js" integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/bootstrap-material-design@4.0.0-beta.4/dist/js/bootstrap-material-design.js" integrity="sha384-3xciOSDAlaXneEmyOo0ME/2grfpqzhhTcM4cE32Ce9+8DW/04AGoTACzQpphYGYe" crossorigin="anonymous"></script>
+    <script>$(document).ready(function() { $('body').bootstrapMaterialDesign(); });</script>
 
     <!-- JS for custom functions -->
     <script src="js/custom.js"></script>

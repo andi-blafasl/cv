@@ -1,11 +1,3 @@
-// collapse mobile navbar on click
-// https://github.com/twbs/bootstrap/issues/12852
-$(document).on('click','.navbar-collapse.in',function(e) {
-    if( $(e.target).is('a') && ( $(e.target).attr('class') != 'dropdown-toggle' ) ) {
-        $(this).collapse('hide');
-    }
-});
-
 // Add smooth scrolling to all links inside a navbar
 $("#main-nav-top a").on('click', function(event){
 
@@ -22,6 +14,6 @@ $("#main-nav-top a").on('click', function(event){
   }, 800, function(){
 
     // Add hash (#) to URL when done scrolling (default click behavior)
-    window.location.hash = hash;
+    //window.location.hash = hash;
   });
 });
